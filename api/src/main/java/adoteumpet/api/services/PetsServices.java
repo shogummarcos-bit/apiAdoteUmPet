@@ -16,10 +16,10 @@ public Pets adicionarPets(Pets pet){
     return petRepository.save(pet);
 
 }
-public List<Pets> listartodos(){
+public List<Pets> listarTodos(){
     return petRepository.findAll();
 }
-public Optional<Pets> buscrPorId(Long id){
+public Optional<Pets> buscarPorId(Long id){
     return petRepository.findById(id);
 }
 public List<Pets> listarDisponivel(){

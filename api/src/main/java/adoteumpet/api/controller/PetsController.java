@@ -20,17 +20,17 @@ public class PetsController {
 @PostMapping
 public ResponseEntity<Pets> cadastrarPets(@RequestBody Pets pet){
     Pets novoPet=petService.adicionarPets(pet);
-    return ResponseEntity.ok(pet);
+    return ResponseEntity.ok(novoPet);
 }
 @GetMapping
 public ResponseEntity<List<Pets>> listarPets(){
-    List<Pets> pers=petService.listarTodos();
+    List<Pets> pets=petService.listarTodos();
     return ResponseEntity.ok(pets);
 }
 @GetMapping("/disponiveis")
-public ResponseEntity<List<Pets>> listaeDispoonivel(){
-    List<Pets> pers=petService.listarDisponivel();
-    return ResponseEntity.ok(pets);
+public ResponseEntity<List<Pets>> listarDispoonivel(){
+    List<Pets> pet=petService.listarDisponivel();
+    return ResponseEntity.ok(pet);
 }
 }
 

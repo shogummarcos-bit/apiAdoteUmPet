@@ -45,7 +45,7 @@ private String descricao;
 private String vacinas;
 
 @Column
-private Boolean desponivel;
+private Boolean disponivel;
 
 @Column
 private LocalDate dataEntrada;

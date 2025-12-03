@@ -1,6 +1,5 @@
 package adoteumpet.api.models;
 
-import java.time.LocalDate;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,29 +26,16 @@ public class Adotante {
     private String nome;
 
     @Column
-    private String especie; 
+    private String cpf; 
 
     @Column
-    private String raca;
+    private String telefone;
 
     @Column
-    private Integer idade;
+    private Integer email;
 
     @Column
-    private String porte;
+    private String endereco;
 
-    @Column
-    private String descricao;
-
-    @Column
-    private String vacinas;
-
-    @Column
-    private Boolean disponivel;
-
-    @Column
-    private LocalDate dataEntrada;
-
-    @Column
-    private LocalDate dataAdocao;
+  
 }

@@ -27,7 +27,7 @@ public class Adotante {
     private String nome;
 
     @Column
-    private String especie;
+    private String especie; 
 
     @Column
     private String raca;
